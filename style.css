@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+}
+
+.seat {
+    background-color: #444451;
+    height: 24px;
+    width: 24px;
+    margin: 3px;
+    border-radius: 8px;
+}
+
+
+/* 2.divden sonra */
+.seat:nth-of-type(2) {
+    margin-right: 20px;
+}
+
+/* sondan 3.divin */
+.seat:nth-last-of-type(3) {
+    margin-right: 20px;
+}
+
+
+/* seçtiğimiz koltuk için */
+.seat.selected {
+    background-color: #78909C;
+}
+
+
+/* daha önce ayırılmış yerler için */
+.seat.reserved {
+    background-color: #fff;
+}
+
+.seat:not(.reserved):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.screen {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.6);
+}
+
+.movie-list {
+    margin: 20px 0;
+}
+
+.movie-list select {
+    background-color: #444451;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+.movie-list #movie option {
+    background-color: #444451;
+    color: #fff;
+}
+
+
+.info {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    color: #777;
+    display: flex;
+}
+
+.info li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+p.text span{
+    color: #78909C ;
+}
